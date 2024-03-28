@@ -1,1 +1,61 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bunny Grocery</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="pic/icon.png"
+</head>
+<body>
+<header>
+    <div class="main">
+        <div class="logo">
+            <img src="pic/logo.png" alt="The Little Bunny Grocery" class="logo-image">
+            <input type="text" name="search" placeholder="Search Products">
+            <button id="cartButton">
+                <img src="pic/cart.png" alt="Shopping Cart" class="cart-image">
+            </button>
+            <div id="cartPopup" class="cart-popup" style="display: none;">
+                <!-- 购物车内容 -->
+                <p>Test</p>
+            </div>
+            <script>
+                document.getElementById('cartButton').addEventListener('click', function() {
+                    var popup = document.getElementById('cartPopup');
+                    popup.style.display = popup.style.display === 'none' ? 'block' : 'none';
+                });
+            </script>
+        </div>
+        <ul>
+            <li class="active"><a href="#Home"><img src="pic/home.png" alt="Home" style="height: 30px; width: 30px; vertical-align: middle;left: 30%;">Home</a></li>
+            <li><a href="/inseason.html">InSeason</a></li>
+            <li><a href="/special.html">Special</a></li>
+            <li><a href="/organic.html">Organic</a></li>
+            <li><a href="/petfood.html">PetFood</a></li>
+            <li><a href="/frozen.html">Frozen</a></li>
+            <li><a href="/beverages.html">Beverages</a></li>
+            <li><a href="/fresh.html">Fresh</a></li>
+            <!-- <div class="sub-menu">
+                <ul>
+                    <li><a href="Fresh">Fresh</a></li>
+                    <li><a href="Fresh">Fresh</a></li>
+                    <li><a href="Fresh">Fresh</a></li>
+                </ul>
+            </div> -->
+        </ul>
+    </div>
+    <!-- <div class="title">
+        <h1>HOMIE RECIPES</h1>
+    </div>
+    <!-- Add a auto banner -->
+    <div class="slider">
+        <div class="slides">
+            <img src="pic/slogan1.png" style="width: 100%">
+            <img src="pic/mango.jpg" style="width: 100%">
+            <img src="pic/banner5.png" style="width: 100%">
+            <img src="pic/banner6.png" style="width: 100%">
+            <button class="slide-btn left-btn">&#10094;</button>
+            <button class="slide-btn right-btn">&#10095;</button>
+        <script src ="/slide.js" type="text/javascript"></script>
+</header>
+</body>
+</html>
